@@ -1,0 +1,23 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 1rem;
+  color: transparent;
+  background: linear-gradient(90.35deg, #9497ae 3.41%, #30a7b4 90.33%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.explain {
+  color: #bbbbbcc8;
+  margin-top: 0.5rem;
+}
+
+.link {
+  color: #0c4eb1;
+}
