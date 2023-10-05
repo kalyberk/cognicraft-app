@@ -1,3 +1,3 @@
-import { ThirdwebAuthHandler } from "@/lib/thirdwebSdk";
+import { ThirdwebAuthHandler } from '@/lib/thirdwebSdk'
 
-export default ThirdwebAuthHandler();
+export default ThirdwebAuthHandler()

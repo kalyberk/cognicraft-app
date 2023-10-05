@@ -1,6 +1,6 @@
-import { Header } from "./Header";
-import { Heading } from "./Heading";
-import { Footer } from "./Footer";
+import { Header } from './Header'
+import { Heading } from './Heading'
+import { Footer } from './Footer'
 
 export const Layout = ({ pageProps, children }) => {
   return (
@@ -10,5 +10,5 @@ export const Layout = ({ pageProps, children }) => {
       <main>{children}</main>
       <Footer />
     </>
-  );
-};
+  )
+}

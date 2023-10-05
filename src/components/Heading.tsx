@@ -1,4 +1,4 @@
-import styles from "@/styles/Heading.module.css";
+import styles from '@/styles/Heading.module.css'
 
 export const Heading = ({ showExplain = false }) => {
   return (
@@ -9,18 +9,18 @@ export const Heading = ({ showExplain = false }) => {
       {showExplain && (
         <p className={styles.explain}>
           Generate creative images and turn them into NFTs <br />
-          using{" "}
+          using{' '}
           <a
             className={styles.link}
-            href="https://openai.com/dall-e-2"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://openai.com/dall-e-2'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             OpenAI DALL·E 2
           </a>
-          .{" "}
+          .{' '}
         </p>
       )}
     </div>
-  );
-};
+  )
+}

@@ -1,6 +1,6 @@
-import styles from "@/styles/Card.module.css";
+import styles from '@/styles/Card.module.css'
 
-export const Card = ({ title, subtitle = "", body, isLoading = false }) => {
+export const Card = ({ title, subtitle = '', body, isLoading = false }) => {
   return (
     <div className={styles.card}>
       <h3>{title}</h3>
@@ -10,10 +10,8 @@ export const Card = ({ title, subtitle = "", body, isLoading = false }) => {
           <div className={styles.spinner}></div>
         </div>
       ) : (
-        <div className={styles.body}>
-          {body}
-        </div>
+        <div className={styles.body}>{body}</div>
       )}
     </div>
-  );
-};
+  )
+}

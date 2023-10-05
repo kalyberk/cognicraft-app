@@ -11,7 +11,7 @@ export default async function handler(
   const randomImages = Array.from({ length: 4 }, (_, i) => ({
     // url: `https://picsum.photos/1024?random=${i}`,
     url: `https://picsum.photos/seed/${Math.random() * 100 * (i + 1)}/512`,
-  }));
+  }))
 
   if (process.env.NODE_ENV === 'production') {
     try {
