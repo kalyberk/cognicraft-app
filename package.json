@@ -8,12 +8,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@thirdweb-dev/auth": "^3.2.40",
-    "@thirdweb-dev/chains": "^0.1.52",
-    "@thirdweb-dev/react": "^3.14.0",
-    "@thirdweb-dev/sdk": "^3.10.0",
-    "@thirdweb-dev/storage": "^1.2.10",
-    "ethers": "^5.7.2",
+    "@thirdweb-dev/auth": "^3.2.46",
+    "@thirdweb-dev/chains": "^0.1.54",
+    "@thirdweb-dev/react": "^3.16.3",
+    "@thirdweb-dev/sdk": "^3.10.65",
+    "@thirdweb-dev/storage": "^1.2.11",
+    "ethers": "5",
     "next": "^13",
     "openai": "^4.10.0",
     "react": "^18.2",
