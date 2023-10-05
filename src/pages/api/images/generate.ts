@@ -7,6 +7,12 @@ export default async function handler(
   res: NextApiResponse
 ) {
   let data: OpenAI.Image[] = []
+
+  const randomImages = Array.from({ length: 4 }, (_, i) => ({
+    // url: `https://picsum.photos/1024?random=${i}`,
+    url: `https://picsum.photos/seed/${Math.random() * 100 * (i + 1)}/512`,
+  }));
+
   if (process.env.NODE_ENV === 'production') {
     try {
       const params: OpenAI.ImageGenerateParams = {
@@ -17,14 +23,11 @@ export default async function handler(
       }
       data = await generateImages(params)
     } catch (err) {
+      data = randomImages // Fallback to random images, just in case OpenAPI credits run out
       console.error(err)
-      return res.status(500).json({ message: 'Generation failed' })
+      // return res.status(500).json({ message: 'Generation failed' })
     }
   } else {
-    const randomImages = Array.from({ length: 4 }, (_, i) => ({
-      // url: `https://picsum.photos/1024?random=${i}`,
-      url: `https://picsum.photos/seed/${Math.random() * 100 * (i + 1)}/512`,
-    }));
     data = randomImages
   }
 

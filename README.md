@@ -45,5 +45,5 @@ Build and start the production server:
 
 ---
 
-**_Note_**: This project is for demonstration purposes only.
+**_Note_**: This project is for demonstration purposes only, and CogniCraft's Sepolia testnet contracts are used. You may need some testnet tokens.
 **_Note_**: Demo might not work well since it's consuming OpenAI's image generation API and requests are limited.
