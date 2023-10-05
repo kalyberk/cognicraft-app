@@ -1,6 +1,7 @@
 import { Sepolia } from '@thirdweb-dev/chains'
 
-export const domainName = 'cognicraft.xyz'
+// export const domainName = 'cognicraft.xyz'
+export const domainName = 'cognicraft.vercel.app'
 
 export const chain = Sepolia
 
