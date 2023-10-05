@@ -41,9 +41,11 @@ Build and start the production server:
 
 ## Images
 
-- To prevent excessive image generation, non-production environment will use random images from [Picsum](https://picsum.photos). You can change this behaviour in `src/pages/api/generate.ts`.
+- To prevent excessive image generation, non-production environment will use random images from [Picsum](https://picsum.photos). Production environment uses OpenAI's image generation API, however if OpenAI credits are depleted, it will fallback to Picsum. You can change this behaviour in `src/pages/api/generate.ts`.
 
 ---
 
-**_Note_**: This project is for demonstration purposes only, and CogniCraft's Sepolia testnet contracts are used. You may need some testnet tokens.
-**_Note_**: Demo might not work well since it's consuming OpenAI's image generation API and requests are limited.
+**_Additional Notes:_**
+
+- This project is for demonstration purposes only, and CogniCraft's Sepolia testnet contracts are used. You may need some testnet tokens.
+- Demo might not work well since it's consuming OpenAI's image generation API and requests are limited.
